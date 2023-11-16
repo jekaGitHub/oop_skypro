@@ -1,11 +1,12 @@
-from datetime import datetime
-import os
-import requests
 import json
+import os
+from datetime import datetime
 
-API_KEY = 'xcbDQ9fSwl2Z9OkMwe44Yx5CUCdBd5qB'
+import requests
+
+API_KEY = os.getenv('RATE_API_KEY')
 CURRENCY_RATES_FILE = 'currency_rates.json'
-# API_KEY = os.getenv('RATE_API_KEY')
+
 
 def main():
     while True:
